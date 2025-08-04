@@ -26,9 +26,9 @@ This week, we covered:
 
 Here are the materials for this week:
 
-* [Lecture Slides (PDF)](resources/ReactiveSynthesis_Lecture_1.pdf)
-* [Code Examples (ZIP)](resources/week1-code.zip)
-* [Additional Reading (PDF)](resources/week1-reading.pdf)
+* [Lecture Slides (PDF)](Resources/ReactiveSynthesis_Lecture_1.pdf)
+* [Code Examples (ZIP)](Resources/week1-code.zip)
+* [Additional Reading (PDF)](Resources/week1-reading.pdf)
 
 ---
 
