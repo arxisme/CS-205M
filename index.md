@@ -1,11 +1,11 @@
 ---
-layout: minimal # Use your custom minimal layout
-title: [Course Name] - Lecture Schedule
+layout: minimal
+title: CS-205M
 ---
 
-# Welcome to [Course Name]!
+# Welcome to CS-205M(Theoritical Foundation of Computer Science)
 
-Instructor: [Kushraj Madnani](https://www.iitg.ac.in/cse/internet-pages/khushraj)
+*Instructor:* [Kushraj Madnani](https://www.iitg.ac.in/cse/internet-pages/khushraj)
 
 
 This site provides weekly lecture details and downloadable resources for the course.
