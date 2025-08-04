@@ -1,8 +1,9 @@
-title: My Markdown Site
-description: A simple website hosted on GitHub Pages.
+title: CS-205M
+description: Official website for CS-205M(Theoritical Foundation of Computer Science) lectures and resources.
 theme:  jekyll-theme-primer # You can choose other themes like jekyll-theme-cayman, jekyll-theme-architect, etc.
 
-# Exclude files from the Jekyll build
+
+
 exclude:
   - README.md
   - .gitignore
