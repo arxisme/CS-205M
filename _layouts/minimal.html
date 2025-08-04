@@ -26,6 +26,9 @@
             align-items: center;
             margin-bottom: 20px; /* Space below navbar */
         }
+        .nav-content{
+          max-width: 1200px;
+        }
 
         .navbar-brand {
             font-family: 'Montserrat', sans-serif; /* Modern font for logo */
@@ -68,6 +71,7 @@
             margin-bottom: 15px;
         }
 
+
         a {
             color: #007bff; /* Standard blue for general links */
             text-decoration: none;
@@ -89,13 +93,14 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+
             .navbar-nav {
                 margin-top: 10px;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
             }
-            .navbar-nav a {
+            .navbar-nav  a {
                 display: block;
                 width: 100%;
                 text-align: center;
@@ -110,10 +115,12 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="{{ site.baseurl }}/" class="navbar-brand">CS-205M</a>
+        <div class="nav-content">
+          <a href="{{ site.baseurl }}/" class="navbar-brand">CS-205M</a>
         <div class="navbar-nav">
             <a href="{{ site.baseurl }}/">Home</a>
             <!-- Add more navigation links here if needed, e.g., <a href="{{ site.baseurl }}/syllabus.html">Syllabus</a> -->
+        </div>
         </div>
     </nav>
     <main>
