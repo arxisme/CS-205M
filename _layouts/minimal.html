@@ -5,58 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <style>
+        /* Modern Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@500;700&display=swap');
+
         body {
-            font-family: 'Inter', sans-serif; /* Using Inter font as per guidelines */
-            margin: 20px;
+            font-family: 'Inter', sans-serif; /* Primary content font */
+            margin: 0; /* Reset default body margin */
             line-height: 1.6;
-            max-width: 960px; /* Increased max-width for better content display */
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #f4f7f6; /* Light background color */
-            color: #333;
-            border-radius: 8px; /* Rounded corners for the body content area */
+            background-color: #f8f9fa; /* Very light grey background */
+            color: #343a40; /* Darker text color */
         }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #ffffff; /* White background for navbar */
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px; /* Space below navbar */
+        }
+
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif; /* Modern font for logo */
+            font-weight: 700;
+            font-size: 1.8em;
+            color: #495057; /* Dark grey for logo */
+            text-decoration: none;
+            letter-spacing: -0.5px; /* Slightly tighter letter spacing */
+        }
+
+        .navbar-nav a {
+            color: #6c757d; /* Muted grey for links */
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #e9ecef; /* Light grey on hover */
+            color: #343a40;
+        }
+
+        /* Main Content Area */
         main {
             padding: 20px;
             background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Slightly more prominent shadow for content */
+            max-width: 960px; /* Increased max-width for better content display */
+            margin: 0 auto 40px auto; /* Centered with bottom margin */
         }
+
         h1, h2, h3 {
-            color: #2c3e50; /* Darker heading color */
-            border-bottom: 2px solid #e0e0e0;
+            font-family: 'Montserrat', sans-serif; /* Headings use modern font */
+            color: #212529; /* Darker heading color */
+            border-bottom: 1px solid #dee2e6; /* Lighter border */
             padding-bottom: 10px;
-            margin-top: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
         }
+
         a {
-            color: #3498db; /* Blue for links */
+            color: #007bff; /* Standard blue for general links */
             text-decoration: none;
-            border-radius: 4px;
-            padding: 2px 4px;
-            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
         }
         a:hover {
             text-decoration: underline;
-            background-color: #eaf6fd;
+            color: #0056b3;
         }
+
         ul {
             list-style-type: disc;
-            padding-left: 20px;
+            padding-left: 25px;
         }
-        /* Basic responsive adjustments */
+
+        /* Responsive Adjustments */
         @media (max-width: 768px) {
-            body {
-                margin: 10px;
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar-nav {
+                margin-top: 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .navbar-nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 5px;
             }
             main {
+                margin: 0 10px 20px 10px; /* Adjust margin for smaller screens */
                 padding: 15px;
             }
         }
     </style>
-    <!-- Google Fonts for Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="{{ site.baseurl }}/" class="navbar-brand">CS-205M</a>
+        <div class="navbar-nav">
+            <a href="{{ site.baseurl }}/">Home</a>
+            <!-- Add more navigation links here if needed, e.g., <a href="{{ site.baseurl }}/syllabus.html">Syllabus</a> -->
+        </div>
+    </nav>
     <main>
         {{ content }}
     </main>

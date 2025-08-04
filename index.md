@@ -5,8 +5,8 @@ title: [Course Name] - Lecture Schedule
 
 # Welcome to [Course Name]!
 
-Instructor: [Professor's Name]
-TA: [Your Name]
+Instructor: [Kushraj Madnani](https://www.iitg.ac.in/cse/internet-pages/khushraj)
+
 
 This site provides weekly lecture details and downloadable resources for the course.
 
