@@ -1,0 +1,8 @@
+title: My Markdown Site
+description: A simple website hosted on GitHub Pages.
+theme: jekyll-theme-minimal # You can choose other themes like jekyll-theme-cayman, jekyll-theme-architect, etc.
+
+# Exclude files from the Jekyll build
+exclude:
+  - README.md
+  - .gitignore
